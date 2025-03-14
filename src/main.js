@@ -1,0 +1,6 @@
+import "../styles/modern-normalize.css"
+import "../styles/styles.css"
+import "../styles/componentes/header.css"
+import "../styles/componentes/hero.css"
+import "../styles/componentes/about.css"
+import "../styles/utils.css"

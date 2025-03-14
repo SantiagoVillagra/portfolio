@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Dark Mode & Idioma</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Modo oscuro */
+        .dark-mode {
+            background: #121212;
+            color: white;
+        }
+
+        /* Contenedor del toggle */
+        .toggle-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        /* Estilo del switch */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 25px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: 0.4s;
+            border-radius: 25px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 3px;
+            background-color: white;
+            transition: 0.4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #4CAF50;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(25px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">Modo Claro / Español</h1>
+    
+    <div class="toggle-container">
+        <!-- Switch para Dark Mode -->
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+        <span>🌙 / ☀️</span>
+
+        <!-- Switch para idioma -->
+        <label class="switch">
+            <input type="checkbox" id="languageToggle">
+            <span class="slider"></span>
+        </label>
+        <span>🇪🇸 / 🇺🇸</span>
+    </div>
+
+    <script>
+        // Toggle Dark Mode
+        document.getElementById("darkModeToggle").addEventListener("change", function () {
+            document.body.classList.toggle("dark-mode", this.checked);
+        });
+
+        // Toggle Language
+        document.getElementById("languageToggle").addEventListener("change", function () {
+            const title = document.getElementById("title");
+            if (this.checked) {
+                title.textContent = "Dark Mode / English";
+            } else {
+                title.textContent = "Modo Claro / Español";
+            }
+        });
+    </script>
+
+</body>
+</html>
