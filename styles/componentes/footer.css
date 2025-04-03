@@ -1,0 +1,41 @@
+.footer__title{
+    font-size: var(--size-xs);
+    font-weight: 400;
+    color: var(--clr-slate600);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    user-select: none;
+
+}
+
+
+/* container xs 
+@media (min-width: 475px) {
+   
+ } 
+
+/* container sm*/
+/* @media (min-width: 640px) {
+  
+}  */
+
+/* container md*/
+/* @media (min-width: 768px) {
+  
+}  */
+
+/* container lg*/
+/* @media (min-width: 1024px) {
+    
+}  */
+
+/* container Xl*/
+/* @media (min-width: 1280px) {
+    
+}  */
+
+/* container 2xl*/
+/* @media (min-width: 1536px) {
+   
+}  */

@@ -6,4 +6,10 @@ import "../styles/componentes/about.css"
 import "../styles/componentes/featured.css"
 import "../styles/componentes/work.css"
 import "../styles/componentes/contact.css"
+import "../styles/componentes/footer.css"
+import "../styles/componentes/mobile-nav.css"
 import "../styles/utils.css"
+
+import mobileNav from "./utils/mobile-nav"
+
+mobileNav()
