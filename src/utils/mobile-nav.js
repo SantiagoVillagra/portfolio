@@ -9,10 +9,10 @@ const mobileNav = () => {
     isMobileNavOpen = !isMobileNavOpen;
     if (isMobileNavOpen === true) {
       mobileNav.style.display = "flex";
-      document.body.style.overflowy = "hidden";
+      document.body.style.overflowY = "hidden";
     } else {
       mobileNav.style.display = "none";
-      document.body.style.overflowy = "auto";
+      document.body.style.overflowY = "auto";
     }
   });
 
@@ -20,7 +20,7 @@ const mobileNav = () => {
     link.addEventListener("click", () => {
         isMobileNavOpen = false
         mobileNav.style.display = 'none'
-        document.body.style.overflowy = 'auto'
+        document.body.style.overflowY = 'auto'
     });
   });
 };

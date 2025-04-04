@@ -24,7 +24,7 @@
         </li>
         <li class="header__liner"></li>
         <li>
-          <button class="header__sun">
+          <button id="theme-toggle" class="header__sun theme-toggle">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path
                 d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -55,7 +55,7 @@
           <li class="mobile-nav__link" href="#contact">Contact</li>
           <li class="mobile-nav__link-line"></li>
           <li > 
-            <button class="mobile-nav__sun">
+            <button id="theme-toggle" class="mobile-nav__sun">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
@@ -73,7 +73,7 @@
 
   <main>
     <section class="hero container">
-      <img class="hero__img" src="./images/cv.jpg" alt="SantiagoVillagraPhoto">
+      <img  class="hero__img" src="./images/cv.jpg" alt="SantiagoVillagraPhoto">
       <h2 class="hero__subtitle">Hola, Soy Santiago Villagra</h2>
       <h1 class="hero__title">Front-End web developer</h1>
       <p class="hero__description">Desarrollador web <strong>Frontend/FullStack</strong> , centrado en la resolución de
@@ -117,7 +117,7 @@
         </div>
       </div>
       <div class="about__img-wrapper">
-        <img class="about__img" src="./images/about.jpg" alt="SantiagoAbout">
+        <img class="about__img lazy loading" src="https://fakeimg.pl/1000x941" data-src="./images/about.jpg" alt="SantiagoAbout">
       </div>
     </section>
     <section id="featured" class="featured container section">
@@ -162,16 +162,16 @@
       <div class="featured__img-container">
         
         <div class="featured__img-wrapper">
-          <img src="./images/sp-home.png" alt="ShopSport screenshots home">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-home.png" alt="ShopSport screenshots home">
         </div>
         <div class="featured__img-wrapper">
-          <img src="./images/sp-login.png" alt="ShopSport screenshots login">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-login.png" alt="ShopSport screenshots login">
         </div>
         <div class="featured__img-wrapper">
-          <img src="./images/sp-capturas-04.jpg" alt="ShopSport screenshots detail">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-capturas-04.jpg" alt="ShopSport screenshots detail">
         </div>
         <div class="featured__img-wrapper">
-          <img src="./images/sp-capturas-05.jpg" alt="ShopSport screenshots products">
+          <img class="lazy loading" src="https://fakeimg.pl/2730x1468" data-src="./images/sp-capturas-05.jpg" alt="ShopSport screenshots products">
         </div>
 
       </div>
@@ -191,7 +191,7 @@
         <!-- PROJECT 1 -->
       <h3 class="work__project-title">Project 1</h3>
       <div class="work__img-wrapper work__image1">
-        <img src="/images/pikachu.png" alt="">
+        <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/pikachu.png" alt="">
       </div>
       <div class="work__project  work__content1">
         <h3 class="work__project-subtitle">Pikachu</h3>
@@ -205,7 +205,7 @@
              <!-- PROJECT 2 -->
       <h3 class="work__project-title">Project 2</h3>
       <div class="work__img-wrapper work__image2">
-        <img src="/images/holding.png" alt="">
+        <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/holding.png" alt="">
       </div>
       <div class="work__project work__content2">
         <h3 class="work__project-subtitle">Meme1</h3>
@@ -220,7 +220,7 @@
       <!-- PROJECT 3 -->
       <h3 class="work__project-title">Project 3</h3>
       <div class="work__img-wrapper work__image3">
-        <img src="/images/holding.png" alt="">
+        <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/holding.png" alt="">
       </div>
       <div class="work__project work__content3">
         <h3 class="work__project-subtitle">Meme2</h3>
@@ -235,7 +235,7 @@
         <!-- PROJECT 4 -->
         <h3 class="work__project-title">Project 4</h3>
         <div class="work__img-wrapper work__image4">
-          <img src="/images/holding.png" alt="">
+          <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/holding.png" alt="">
         </div>
         <div class="work__project work__content4">
           <h3 class="work__project-subtitle">Meme3</h3>
@@ -250,7 +250,7 @@
          <!-- PROJECT 5 -->
          <h3 class="work__project-title">Project 5</h3>
          <div class="work__img-wrapper work__image5">
-           <img src="/images/holding.png" alt="">
+           <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/holding.png" alt="">
          </div>
          <div class="work__project work__content5">
           <h3 class="work__project-subtitle">Meme4</h3>
@@ -265,7 +265,7 @@
           <!-- PROJECT 6 -->
         <h3 class="work__project-title">Project 6</h3>
         <div class="work__img-wrapper work__image6">
-          <img src="/images/holding.png" alt="">
+          <img class="lazy loading" src="https://fakeimg.pl/980x980" data-src="/images/holding.png" alt="">
         </div>
         <div class="work__project work__content6">
           <h3 class="work__project-subtitle">Meme5</h3>
